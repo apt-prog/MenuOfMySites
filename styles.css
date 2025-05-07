@@ -1,0 +1,117 @@
+/* Universal Css Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+}
+
+/* Root Css Variables */
+:root {
+  --primary1-color: #007bff;
+  --primary2-color: #ffb300;
+  --background-primary: #111111;
+  --main-color: #fff;
+}
+
+/* Body Styles */
+body {
+  background-color: var(--background-primary);
+  color: var(--main-color);
+  padding: 20px;
+}
+
+/* Upper Text */
+.Upper_Text h1 {
+  font-size: 2rem;
+  font-family: "Exo 2", sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Box Container */
+.Box {
+  width: 90%;
+  max-width: 600px;
+  margin: 30px auto;
+  border: 2px solid var(--primary1-color);
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table Styles */
+.ProjectTable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+.ProjectTable th,
+.ProjectTable td {
+  padding: 15px 10px;
+  text-align: center;
+  border-bottom: 1px solid var(--main-color);
+  color: var(--primary2-color);
+  font-size: 0.95rem;
+}
+
+.ProjectTable th {
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+/* Icons */
+.ProjectTable i {
+  font-size: 1.2rem;
+  margin: 0 5px;
+}
+
+/* Anchor Styles */
+.ProjectTable a {
+  text-decoration: none;
+  color: var(--primary1-color);
+}
+
+a:hover {
+  color: var(--main-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .Upper_Text h1 {
+    font-size: 1.7rem;
+  }
+
+  .ProjectTable th,
+  .ProjectTable td {
+    font-size: 0.9rem;
+    padding: 10px 6px;
+  }
+
+  .Box {
+    width: 100% !important;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Upper_Text h1 {
+    font-size: 1.5rem;
+  }
+
+  .ProjectTable th,
+  .ProjectTable td {
+    font-size: 0.85rem;
+    padding: 8px 4px;
+  }
+
+  .Box {
+    padding: 10px;
+  }
+}
