@@ -1,7 +1,5 @@
 # FenilVegad - Pro - Explorer
 
-Welcome to my portfolio page! This site showcases my work with a simple and clean table layout. Below are the features and structure of the project:
-
 ## Features
 
 - **Project Table**: Displays all projects in a table format.
